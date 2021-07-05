@@ -16,16 +16,26 @@ namespace ConsoleApp2.Tests
         {
 
             var tt = new numOpp() { };
+            var test = tt.addT(1, 1);
+
+            Assert.AreEqual(2, test);
+        }
+
+        [TestMethod()]
+        public void addTTest2()
+        {
+
+            var tt = new numOpp() { };
             var test = tt.addT(1, 2);
 
             Assert.AreEqual(3, test);
         }
     }
 }
-
+/*
 namespace ConsoleApp2Tests
 {
     class numOppTests
     {
     }
-}
+}*/
